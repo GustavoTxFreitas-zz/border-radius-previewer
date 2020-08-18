@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    padding: 2em;
+    background-color: #eee;
+}
+
+#box {
+    width: 10em;
+    height: 10em;
+    margin-bottom: 2em;
+    border-radius: 20%;
+    transition: border-radius 0.5s;
+    background: linear-gradient(to top right, rgb(35, 35, 228), rgb(1, 153, 255));
+}
