@@ -1,4 +1,5 @@
 var boxElement = document.querySelector('#box');
+var codeElement = document.querySelector('#code');
 var inputElement = document.querySelectorAll('input');
 
 for (input of inputElement) {
@@ -10,11 +11,20 @@ for (input of inputElement) {
 }
 
 function changeRadius() {
-    boxElement.style.borderTopLeftRadius = inputElement[0].value + '% ' + inputElement[1].value + '%';
+    var valor = '';
+    for (var i = 0; i < 8; i += 2) {
+        valor += inputElement[i].value + '% ';
+    }
+    valor += '/ '
+    for (var i = 1; i < 8; i += 2) {
+        valor += inputElement[i].value + '% ';
+    }
+    boxElement.style.borderRadius = valor;
+    codeElement.innerText = 'border: ' + valor + ';';
+}
 
-    boxElement.style.borderTopRightRadius = inputElement[2].value + '% ' + inputElement[3].value + '%';
-
-    boxElement.style.borderBottomLeftRadius = inputElement[4].value + '% ' + inputElement[5].value + '%';
-
-    boxElement.style.borderBottomRightRadius = inputElement[6].value + '% ' + inputElement[7].value + '%';
+codeElement.onclick = function () {
+    codeElement.select();
+    codeElement.setSelectionRange(0, 99999);
+    document.execCommand('copy');
 }

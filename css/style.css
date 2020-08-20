@@ -15,5 +15,5 @@ body {
     margin-bottom: 2em;
     border-radius: 20%;
     transition: border-radius 0.5s;
-    background: linear-gradient(to top right, rgb(35, 35, 228), rgb(1, 153, 255));
+    background: linear-gradient(to top right, rgb(15, 0, 200), rgb(0, 200, 255));
 }
