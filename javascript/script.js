@@ -20,11 +20,24 @@ function changeRadius() {
         valor += inputElement[i].value + '% ';
     }
     boxElement.style.borderRadius = valor;
-    codeElement.innerText = 'border: ' + valor + ';';
+    codeElement.innerHTML = '<p>border: <span>' + valor.trim() + '</span>;</p>';
 }
 
 codeElement.onclick = function () {
-    codeElement.select();
-    codeElement.setSelectionRange(0, 99999);
-    document.execCommand('copy');
+    if (document.body.createTextRange) {
+        var range = document.body.createTextRange();
+        range.moveToElementText(codeElement);
+        range.select();
+        document.execCommand('copy');
+    }
+    else if (window.getSelection) {
+        // other browsers
+
+        var selection = window.getSelection();
+        var range = document.createRange();
+        range.selectNodeContents(codeElement);
+        selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+    }
 }

@@ -1,52 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- HTML5Shiv -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <![endif]-->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Border-Radius Previewer</title>
+  <!-- HTML5Shiv -->
+  <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <![endif]-->
 
-  </head>
+  <title>Border-Radius Previewer</title>
 
-  <body>
+</head>
 
-    <div id="box"></div>
+<body>
 
-    topLeft
-    <input type="range">
-    <input type="range">
-    
-    <br>
+  <div id="container">
 
-    topRight
-    <input type="range">
-    <input type="range">
-    <br>
+    <div id="row">
 
-    bottomRight
-    <input type="range">
-    <input type="range">
-    <br>
+      <div id="box"></div>
 
-    bottomLeft
-    <input type="range">
-    <input type="range">
+      <div>
 
-    <textarea id="code">
-      border: 20% 20% 20% 20% / 20% 20% 20% 20%;
-    </textarea>
+        <h4>topLeft</h4>
+        <input type="range">
+        <input type="range">
+
+        <h4>topRight</h4>
+        <input type="range">
+        <input type="range">
+
+        <h4>bottomRight</h4>
+        <input type="range">
+        <input type="range">
+        <h4>bottomLeft</h4>
+
+        <input type="range">
+        <input type="range">
+
+      </div>
+
+    </div>
+
+    <div id="code">
+      <p>
+        border: <span>20% 20% 20% 20% / 20% 20% 20% 20%</span>;
+      </p>
+    </div>
+
+    <footer>
+      Feito por:
+      <a href="https://github.com/GustavoTxFreitas">Gustavo Teixeira</a>
+    </footer>
+
+  </div>
 
 
-    <script src="javascript/script.js"></script>
 
-  </body>
+  <script src="javascript/script.js"></script>
+
+</body>
+
 </html>
