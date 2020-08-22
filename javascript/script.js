@@ -20,7 +20,7 @@ function changeRadius() {
         valor += inputElement[i].value + '% ';
     }
     boxElement.style.borderRadius = valor;
-    codeElement.innerHTML = '<p>border: <span>' + valor.trim() + '</span>;</p>';
+    codeElement.innerHTML = 'border: <span>' + valor.trim() + '</span>;';
 }
 
 codeElement.onclick = function () {

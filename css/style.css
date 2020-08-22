@@ -1,57 +1,92 @@
+@media (max-width: 580px){
+    #row{
+        flex-direction: column;
+    }  
+    .col5{
+        width: 80%;
+        margin: 1em auto;
+    }  
+}
+
+@media (min-width: 581px){
+    body, html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #container {
+        border-radius: 1em;
+        background-color: #ebebeb;
+        box-shadow: 0 0 10px #0004;
+    }
+
+    #row{
+        margin-bottom: 2em;
+        flex-direction: row;
+        justify-content: space-between;
+    }    
+    .col5{
+        width: 45%;
+    }
+}
+
+/* Layout */
+
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    outline: 0;
+    box-sizing: border-box;
 }
 
-body {
-    color: #999;
-    height: 100vh;
-    display: flex;
+body, html {
+    height: 100%;
+    color: #999999;
     font-weight: 700;
-    align-items: center;
-    justify-content: center;
-    background-color: #e9e9e9;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ebebeb;
+    font-family: Roboto, Arial, sans-serif;
 }
 
 #container {
-    padding: 2em 3em;
-    border-radius: 1em;
-    box-sizing: border-box;
-    box-shadow: 0 0 1em #0004;
-    background-color: #eeeeee;
-}
-
-#row {
+    width: 100%;
+    padding: 2em;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
+#row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}    
+
 #box {
-    width: 18em;
-    height: 18em;
-    margin-right: 5em;
+    width: 14em;
+    height: 14em;
     border-radius: 20%;
     transition: border-radius 0.5s;
     background: linear-gradient(to top right, #1500ee, #00dde0);
 }
 
-input {
-    width: 100%;
-}
+/* Outros */
 
 #code {
     color: #ddd;
     padding: 1em 2em;
-    margin: 2em 0 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
     border-radius: 0.6em;
     background-color: #364f6b;
 }
 
 #code span {
     color: #79a9df;
+}
+
+input {
+    width: 100%;
 }
 
 a:link, a:visited, a:active {
