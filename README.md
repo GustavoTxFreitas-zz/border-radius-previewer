@@ -5,32 +5,31 @@
   <img src='https://user-images.githubusercontent.com/62919596/91671099-01bb5800-eafa-11ea-8b7b-e1c5546624a1.png' alt='Captura de tela navegador mobile' height='250'/>
 </p>
 
-> Some good text and Lorem Ipsum dolor sit amet, consectetur adipiscing elit.
+>O atributo ***border-radius*** (bordas arredondadas) permite a criação de layouts mais agradáveis, suavizando botões, caixas e outros componentes da tela. Esse atributo é muito utilizado por Designers de Experiência, Designers de Interface e Programadores.
 
 <br>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at ex sit amet ligula ultricies tempor vel ac dui. Pellentesque nisi est, congue sed justo rutrum, rhoncus auctor elit. Aenean faucibus bibendum libero, quis lobortis nisi varius vitae. Suspendisse tempor nunc diam, in consectetur arcu posuere facilisis.
+A Plataforma Digital **Border-radius-Previewer** permite que o usuário visualize os cantos arredondados de uma caixa e altere seus valores por meio de "sliders", botões deslizáveis que representam uma contagem de 0% a 100% (em passos de 10%). Você pode conferir o site [clicando aqui](https://gustavotxfreitas.github.io/border-radius-previewer/)!
 
 <br>
-
-## Motivação
-
-Etiam eget dolor hendrerit, euismod turpis pharetra, commodo leo. Proin varius sem vel volutpat rutrum. Quisque nec ex magna. Nulla in mollis ipsum, a fringilla lorem. Sed pellentesque pretium euismod. Nunc eu nisi at nibh blandit tristique. Donec venenatis lacus tellus. Donec placerat felis nec velit porttitor,
 
 ## Recursos
 
-- ✔️ 
-- ✔️ 
-- ✔️ 
+- ✔️ É possível alterar de forma simples todos os 8 valores para `border-radius`;
+- ✔️ O usuário pode ver uma caixa recebendo os valores passados pelos inputs de tipo `range`;
+- ✔️ A transição entre esses valores é feita de forma suave, facilitando a visão do antes e do depois;
+- ✔️ Após atingir um resultado que o agrade, o usuário pode copiar o CSS resultante para a área de transferência;
 
 <br>
 
-#### Referências Usadas
+#### Referências
 
-- [Referencia1](https://www.google.com.br/);
-- [App-Ideas, idealizador do projeto](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Border-Radius-Previewer.md)
+- [CSS Border-Radius](https://www.w3schools.com/css/css3_borders.asp);
+- [App-Ideas, idealizador do projeto](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Border-Radius-Previewer.md);
+- [Copiar para a Área de Transferência](https://edupala.com/copy-div-content-clipboard/#:~:text=Copying%20the%20text%20from%20the,copying%20text%20from%20text%20input);
 
-#### Tecnologias
+
+#### Tecnologias Utilizadas
 <p>
   <img height='40' src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png' />
   <img height='40' src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png' />
