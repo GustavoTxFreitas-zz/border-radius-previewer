@@ -1,15 +1,17 @@
 <h1 align='center'>Border-Radius Previewer</h1>
 <br>
 <p align='center'>
-  <img src='https://user-images.githubusercontent.com/62919596/91671098-008a2b00-eafa-11ea-9ce5-5b72133b0278.png' alt='Captura de tela navegador desktop' height='250'/>
-  <img src='https://user-images.githubusercontent.com/62919596/91671099-01bb5800-eafa-11ea-8b7b-e1c5546624a1.png' alt='Captura de tela navegador mobile' height='250'/>
+  <a href='https://gustavotxfreitas.github.io/border-radius-previewer/'>
+    <img src='https://user-images.githubusercontent.com/62919596/92534165-7e40eb80-f20a-11ea-862b-bcb3018778da.gif' alt='Captura de tela navegador desktop' height='250'/>
+    <img src='https://user-images.githubusercontent.com/62919596/92534168-7f721880-f20a-11ea-910c-d151c5bfe3b1.gif' alt='Captura de tela navegador mobile' height='250'/>
+  </a>
 </p>
 
 >O atributo ***border-radius*** (bordas arredondadas) permite a criação de layouts mais agradáveis, suavizando botões, caixas e outros componentes da tela. Esse atributo é muito utilizado por Designers de Experiência, Designers de Interface e Programadores.
 
 <br>
 
-A Plataforma Digital **Border-radius-Previewer** permite que o usuário visualize os cantos arredondados de uma caixa e altere seus valores por meio de "sliders", botões deslizáveis que representam uma contagem de 0% a 100% (em passos de 10%). Você pode conferir o site [clicando aqui](https://gustavotxfreitas.github.io/border-radius-previewer/)!
+A Plataforma Digital **Border-radius-Previewer** permite que o usuário visualize os cantos arredondados de uma caixa e altere seus valores por meio de "sliders", botões deslizáveis que representam uma contagem de 0% a 100%. Você pode conferir este projeto [clicando aqui](https://gustavotxfreitas.github.io/border-radius-previewer/)!
 
 <br>
 
