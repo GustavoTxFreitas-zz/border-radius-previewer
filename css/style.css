@@ -1,11 +1,4 @@
 @media (max-width: 580px){
-    #row{
-        flex-direction: column;
-    }  
-    .col5{
-        width: 80%;
-        margin: 1em auto;
-    }  
 }
 
 @media (min-width: 581px){
@@ -18,17 +11,9 @@
     #container {
         border-radius: 1em;
         background-color: #ebebeb;
-        box-shadow: 0 0 10px #0004;
+        box-shadow: 0.5em 0.5em 1em #7774, -0.5em -0.5em 1em #fffa;
     }
 
-    #row{
-        margin-bottom: 2em;
-        flex-direction: row;
-        justify-content: space-between;
-    }    
-    .col5{
-        width: 45%;
-    }
 }
 
 /* Layout */
@@ -56,18 +41,70 @@ body, html {
     flex-direction: column;
 }
 
-#row{
+input{
+    -webkit-appearance: none;
+    background-color: transparent;
     width: 100%;
+    position: absolute;
+}
+
+input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background-color: #fc497f;
+    border: 0.1em solid #0001;
+}
+
+a:link, a:visited, a:active {
+    color: #fc5185;
+}
+
+a:hover {
+    color: #ffa8c2;
+}
+
+/* Display and Inputs */
+
+#display{
+    width: 19em;
+    height: 19em;
     display: flex;
+    position: relative;
+    margin-bottom: 2em;
     align-items: center;
-}    
+    justify-content: center;
+    border: 0.3em dashed #ddd;
+}
 
 #box {
-    width: 14em;
-    height: 14em;
+    z-index: 0;
+    width: 18em;
+    height: 18em;
     border-radius: 20%;
+    position: absolute;
     transition: border-radius 0.5s;
-    background: linear-gradient(to top right, #1500ee, #00dde0);
+    background-image: linear-gradient(to top right, #2500ee, #00dde0);
+}
+
+#topLeft{
+    top: 0;
+    left: 0;
+}
+#topRight{
+    left: 9em;
+    height: 0;
+    transform: rotate(90deg);
+}
+#bottomLeft{
+    height: 0;
+    left: -9em;
+    transform: rotate(90deg);
+}
+#bottomRight{
+    top: 18em;
+    transform: rotate(180deg);
 }
 
 /* Outros */
@@ -85,14 +122,14 @@ body, html {
     color: #79a9df;
 }
 
-input {
-    width: 100%;
-}
-
-a:link, a:visited, a:active {
-    color: #fc5185;
-}
-
-a:hover {
-    color: #ffa8c2;
+#alert{
+    width: 10em;
+    height: 2.5em;
+    color: #fff;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    border-radius: 0.5em;
+    justify-content: center;
+    background-color: #fc5185;
 }

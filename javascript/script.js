@@ -1,26 +1,26 @@
 var boxElement = document.querySelector('#box');
 var codeElement = document.querySelector('#code');
-var inputElement = document.querySelectorAll('input');
+var inputElements = document.querySelectorAll('input')
 
-for (input of inputElement) {
+var topLeft = document.querySelector('input#topLeft');
+var topRight = document.querySelector('input#topRight');
+var bottomLeft = document.querySelector('input#bottomLeft');
+var bottomRight = document.querySelector('input#bottomRight');
+
+for (input of inputElements) {
     input.setAttribute('min', '0');
     input.setAttribute('max', '100');
-    input.setAttribute('step', '10');
-    input.setAttribute('value', '20');
+    input.setAttribute('step', '1');
+    input.setAttribute('value', Math.floor(Math.random()*100));
     input.setAttribute('onchange', 'changeRadius()');
 }
 
+// a a d d / c b b c;
+
 function changeRadius() {
-    var valor = '';
-    for (var i = 0; i < 8; i += 2) {
-        valor += inputElement[i].value + '% ';
-    }
-    valor += '/ '
-    for (var i = 1; i < 8; i += 2) {
-        valor += inputElement[i].value + '% ';
-    }
+    var valor = topLeft.value + '% ' + (100 - topLeft.value) + '% ' + bottomRight.value + '% ' + (100 - bottomRight.value) + '% / ' + bottomLeft.value + '% ' + topRight.value + '% ' + (100 - topRight.value) + '% ' + (100 - bottomLeft.value) + '%';
     boxElement.style.borderRadius = valor;
-    codeElement.innerHTML = 'border: <span>' + valor.trim() + '</span>;';
+    codeElement.innerHTML = 'border: <span>' + valor + '</span>;';
 }
 
 codeElement.onclick = function () {
@@ -41,3 +41,5 @@ codeElement.onclick = function () {
         document.execCommand('copy');
     }
 }
+
+changeRadius()
