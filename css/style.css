@@ -1,17 +1,8 @@
-@media (max-width: 580px){
-}
-
 @media (min-width: 581px){
-    body, html {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     #container {
         border-radius: 1em;
         background-color: #ebebeb;
-        box-shadow: 0.5em 0.5em 1em #7774, -0.5em -0.5em 1em #fffa;
+        box-shadow: 0.5em 0.5em 1em #9993, -0.5em -0.5em 1em #fffa;
     }
 
 }
@@ -26,9 +17,12 @@
 }
 
 body, html {
+    color: #999;
     height: 100%;
-    color: #999999;
+    display: flex;
     font-weight: 700;
+    align-items: center;
+    justify-content: center;
     background-color: #ebebeb;
     font-family: Roboto, Arial, sans-serif;
 }
@@ -53,8 +47,7 @@ input::-webkit-slider-thumb{
     width: 1em;
     height: 1em;
     border-radius: 0.5em;
-    background-color: #fc497f;
-    border: 0.1em solid #0001;
+    background-color: #07264b;
 }
 
 a:link, a:visited, a:active {
@@ -68,8 +61,8 @@ a:hover {
 /* Display and Inputs */
 
 #display{
-    width: 19em;
-    height: 19em;
+    width: 15em;
+    height: 15em;
     display: flex;
     position: relative;
     margin-bottom: 2em;
@@ -80,30 +73,28 @@ a:hover {
 
 #box {
     z-index: 0;
-    width: 18em;
-    height: 18em;
+    width: 14em;
+    height: 14em;
     border-radius: 20%;
     position: absolute;
-    transition: border-radius 0.5s;
     background-image: linear-gradient(to top right, #2500ee, #00dde0);
 }
 
 #topLeft{
     top: 0;
-    left: 0;
 }
 #topRight{
-    left: 9em;
+    left: 7em;
     height: 0;
     transform: rotate(90deg);
 }
 #bottomLeft{
     height: 0;
-    left: -9em;
+    left: -7em;
     transform: rotate(90deg);
 }
 #bottomRight{
-    top: 18em;
+    top: 14em;
     transform: rotate(180deg);
 }
 
@@ -123,6 +114,7 @@ a:hover {
 }
 
 #alert{
+    opacity: 0;
     width: 10em;
     height: 2.5em;
     color: #fff;
@@ -130,6 +122,7 @@ a:hover {
     position: absolute;
     align-items: center;
     border-radius: 0.5em;
+    transition: opacity 0.3s;
     justify-content: center;
     background-color: #fc5185;
 }
